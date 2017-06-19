@@ -9,50 +9,52 @@ import cv2
 # args = vars(ap.parse_args())
 import time
 
-from CarSpotter import CarSpotter
+from LapTimeManager import CarSpotter
 
-COLOUR_COUNT_THRESHOLD = 50
-RACE_LAP_THRESHOLD_MILLIS = 10000
+COLOUR_COUNT_THRESHOLD = 5
+MIN_LAP_TIME_MS = 5000
 
-class RaceDetector():
-    def __init__(self, camera, trackingTags):
+
+class RaceDetector:
+    def __init__(self, camera, tracking_tags, testing=False):
         self.camera = camera
-        self.trackingTags = trackingTags
-        self.carSpotter = CarSpotter(trackingTags, 10)
+        self.tracking_tags = tracking_tags
+        self.car_spotter = CarSpotter(tracking_tags, MIN_LAP_TIME_MS)
+        self.testing = testing
 
-    def watchTrackingTags(self):
+    def setCamera(self, camera):
+        self.camera = camera
+
+    def watch_tracking_tags(self):
 
         while True:
-            frame = self.camera.read()
+            if self.testing:
+                (grabbed, frame) = self.camera.read()
+                if not grabbed:
+                    break
+            else:
+                frame = self.camera.read()
 
-            tag_number = 1
             mask = None
-
-            for tag in self.trackingTags:
+            for tag in self.tracking_tags:
 
                 lower, upper = tag.get_colour_range()
-
                 tag_mask = cv2.inRange(frame, lower, upper)
-                if (cv2.countNonZero(tag_mask) > COLOUR_COUNT_THRESHOLD):
-                    self.carSpotter.registerCar(int(tag_number), int(time.time()))
-                    print "Tag:" + str(tag_number) + ":" + str(cv2.countNonZero(tag_mask))
 
-                tag_number = tag_number + 1
-                if mask == None:
-                    mask = tag_mask
-                else:
-                    mask = cv2.bitwise_or(mask, tag_mask)
+                if cv2.countNonZero(tag_mask) > COLOUR_COUNT_THRESHOLD:
+                    millis = int(round(time.time() * 1000))
+                    self.car_spotter.register_car(tag.id, millis)
 
-            output = cv2.bitwise_and(frame, frame, mask=mask)
-            frame = output
+                #if mask == None:
+                #    mask = tag_mask
+                #else:
+                #    mask = cv2.bitwise_or(mask, tag_mask)
+
+            #output = cv2.bitwise_and(frame, frame, mask=mask)
+            #frame = output
 
             cv2.imshow("Frame", frame)
             key = cv2.waitKey(1) & 0xFF
 
-            # if the 'q' key is pressed, stop the loop
             if key == ord("q"):
-                break
-
-            if key == ord("r"):
-                print "---------------------------"
-
+               break

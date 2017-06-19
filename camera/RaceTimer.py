@@ -1,24 +1,21 @@
-import argparse
-import cv2
-from TrackingTag import TrackingTag
-from ColourFinder import ColourFinder
+from TrackingTagFinder import ColourFinder
 from RaceDetector import RaceDetector
 from imutils.video import WebcamVideoStream
-
-# construct the argument parse and parse the arguments
-ap = argparse.ArgumentParser()
-ap.add_argument("-v", "--video", help="path to the video file")
-args = vars(ap.parse_args())
 
 camera = WebcamVideoStream(src=1).start()
 
 finder = ColourFinder(camera)
-trackingTags = finder.findTrackingTags()
+tracking_tags = finder.find_tracking_tags()
 
-print trackingTags
+for tag in tracking_tags:
+    low, high = tag.get_colour_range()
+    print low
+    print tag.get_middle_colour()
+    print high
+    print "-----"
 
-detector = RaceDetector(camera, trackingTags)
-detector.watchTrackingTags()
+finder.save_tracking_tags_csv(tracking_tags, 'tracking-tags.csv')
 
-# camera.release()
+detector = RaceDetector(camera, tracking_tags)
+detector.watch_tracking_tags()
 
