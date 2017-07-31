@@ -1,42 +1,58 @@
 import unittest
 
-from CarSpotter import CarSpotter
+from camera.LapTimeManager import CarSpotter
 
 
 class LapCounterTests(unittest.TestCase):
     def testCarsSpottedFirstTimeAddsNewCars(self):
-        trackingTags = []
-        carSpotter = CarSpotter(trackingTags, 0)
+        tracking_tags = []
+        car_spotter = CarSpotter(tracking_tags, 0)
 
-        carSpotter.registerCar(1, 100)
-        carSpotter.registerCar(2, 105)
+        car_spotter.register_car(1, 100)
+        car_spotter.register_car(2, 105)
 
-        laps = carSpotter.getLaps()
+        laps = car_spotter.get_laps()
 
         self.assertEqual(laps, {1: [100], 2: [105]})
 
     def testCarsSpottedTwiceAddsTwoLaps(self):
-        trackingTags = []
-        carSpotter = CarSpotter(trackingTags, 0)
+        tracking_tags = []
+        car_spotter = CarSpotter(tracking_tags, 0)
 
-        carSpotter.registerCar(1, 100)
-        carSpotter.registerCar(1, 205)
+        car_spotter.register_car(1, 100)
+        car_spotter.register_car(1, 205)
 
-        laps = carSpotter.getLaps()
+        laps = car_spotter.get_laps()
 
         self.assertEqual(laps, {1: [100, 205]})
 
     def testCarsSpottedTwiceWithinTimeThresholdOnlyAddsOnce(self):
-        trackingTags = []
-        carSpotter = CarSpotter(trackingTags, 50)
+        tracking_tags = []
+        car_spotter = CarSpotter(tracking_tags, 50)
 
-        carSpotter.registerCar(1, 100)
-        carSpotter.registerCar(1, 110)
-        carSpotter.registerCar(1, 150)
+        car_spotter.register_car(1, 100)
+        car_spotter.register_car(1, 110)
+        car_spotter.register_car(1, 150)
 
-        laps = carSpotter.getLaps()
+        laps = car_spotter.get_laps()
 
         self.assertEqual(laps, {1: [100]})
+
+    def testLapTimesCalculatedFromTimeStamps(self):
+        tracking_tags = []
+        car_spotter = CarSpotter(tracking_tags,10)
+
+        car_spotter.register_car(1, 1)
+        car_spotter.register_car(1, 2)
+        car_spotter.register_car(1, 5)
+        car_spotter.register_car(1, 12)
+        car_spotter.register_car(1, 13)
+        car_spotter.register_car(1, 15)
+        car_spotter.register_car(1, 51)
+        car_spotter.register_car(1, 52)
+        car_spotter.register_car(1, 59)
+
+        self.assertEqual(car_spotter.get_lap_times(), "1,11,39\n")
 
 
 def main():
