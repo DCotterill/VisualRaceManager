@@ -105,7 +105,7 @@ class ColourFinder():
 
 
     def save_tracking_tags_csv(self, tracking_tags, filename):
-        writer = csv.writer(open('../data/', filename, mode='w'))
+        writer = csv.writer(open('../data/' + str(filename), 'w'))
         id = 1
         for tag in tracking_tags:
             writer.writerow([id, tag.get_middle_colour()[0], tag.get_middle_colour()[1], tag.get_middle_colour()[2]])

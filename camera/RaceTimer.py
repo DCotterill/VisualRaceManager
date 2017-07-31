@@ -4,6 +4,9 @@ from ThreadedVideoCapture import  ThreadedVideoCapture
 from picamera.array import PiRGBArray
 from picamera import PiCamera
 import time
+# import csv
+#
+# writer = csv.writer(open('../data/' + str("blah.csv"), 'w'))
 
 # initialize the camera and grab a reference to the raw camera capture
 camera = PiCamera()
@@ -13,9 +16,10 @@ rawCapture = PiRGBArray(camera, size=(640, 480))
 
 # allow the camera to warmup
 time.sleep(0.1)
-# camera = ThreadedVideoCapture(src=1).start()
+camera = ThreadedVideoCapture(src=1).start()
 
 finder = ColourFinder(camera, rawCapture)
+
 tracking_tags = finder.find_tracking_tags()
 
 for tag in tracking_tags:
