@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c38a6e8-e7bb-4032-97df-711f37f28007" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/camera/ThreadedVideoCapture.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/ColourFinder.py" afterPath="$PROJECT_DIR$/camera/ColourFinder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/ColourFinderA.py" afterPath="$PROJECT_DIR$/camera/ColourFinderA.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/RaceTimer.py" afterPath="$PROJECT_DIR$/camera/RaceTimer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/TrackingTag.py" afterPath="$PROJECT_DIR$/camera/TrackingTag.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/TrackingTagFinder.py" afterPath="$PROJECT_DIR$/camera/TrackingTagFinder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/test/ColourFinderFunctionalTest.py" afterPath="$PROJECT_DIR$/camera/test/ColourFinderFunctionalTest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/test/RaceDetectorFunctionalTest.py" afterPath="$PROJECT_DIR$/camera/test/RaceDetectorFunctionalTest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/laps-1.csv" afterPath="$PROJECT_DIR$/data/laps-1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/laps-2.csv" afterPath="$PROJECT_DIR$/data/laps-2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/laps-3.csv" afterPath="$PROJECT_DIR$/data/laps-3.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,10 +14,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TrackingTagFinder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TrackingTagFinder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera/TrackingTagFinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="1279">
               <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -70,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RaceTimer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RaceTimer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -207,9 +195,9 @@
         <option value="$PROJECT_DIR$/camera/ThreadedVideoCapture.py" />
         <option value="$PROJECT_DIR$/camera/ColourFinder.py" />
         <option value="$PROJECT_DIR$/camera/ColourFinderA.py" />
-        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
-        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
         <option value="$PROJECT_DIR$/camera/TrackingTagFinder.py" />
+        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
+        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
       </list>
     </option>
   </component>
@@ -832,16 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/camera/BasicCamTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -854,10 +832,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/camera/TrackingTagFinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="1279">
           <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>

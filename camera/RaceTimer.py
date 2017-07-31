@@ -13,9 +13,9 @@ rawCapture = PiRGBArray(camera, size=(640, 480))
 
 # allow the camera to warmup
 time.sleep(0.1)
-camera = ThreadedVideoCapture(src=1).start()
+# camera = ThreadedVideoCapture(src=1).start()
 
-finder = ColourFinder(camera)
+finder = ColourFinder(camera, rawCapture)
 tracking_tags = finder.find_tracking_tags()
 
 for tag in tracking_tags:
