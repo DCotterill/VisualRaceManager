@@ -31,6 +31,6 @@ for tag in tracking_tags:
 
 finder.save_tracking_tags_csv(tracking_tags, 'tracking-tags.csv')
 
-detector = RaceDetector(camera, tracking_tags)
+detector = RaceDetector(camera, tracking_tags, rawCapture)
 detector.watch_tracking_tags()
 
