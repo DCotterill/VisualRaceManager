@@ -44,5 +44,3 @@ detector.setCamera(cv2.VideoCapture("../test-data/orange-car-slow.mov"))
 detector.watch_tracking_tags()
 
 
-# camera.release()
-

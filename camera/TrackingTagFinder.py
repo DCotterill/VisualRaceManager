@@ -6,19 +6,20 @@ from TrackingTag import TrackingTag
 
 
 class ColourFinder():
-    def __init__(self, camera, testing=False):
+    def __init__(self, camera, rawCapture):
         self.camera = camera
-        self.testing = testing
         self.start_time = time.time()
+        self.rawCapture = rawCapture
 
     def find_tracking_tags(self):
         tracking_tags = []
 
-        while True:
-            if self.testing:
-                (grabbed, frame) = self.camera.read()
-            else:
-                frame = self.camera.read()
+        for image in self.camera.capture_continuous(self.rawCapture, format="bgr", use_video_port=True):
+            # grab the raw NumPy array representing the image, then initialize the timestamp
+            # and occupied/unoccupied text
+            frame = image.array
+        # while True:
+        #     (grabbed, frame) = self.camera.read()
 
             # convert the frame to grayscale, blur it, and detect edges
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -29,13 +30,15 @@ class ColourFinder():
             (_, cnts, _) = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL,
                                             cv2.CHAIN_APPROX_SIMPLE)
             # loop over the contours
+            # print "----"
             for c in cnts:
                 # approximate the contour
                 peri = cv2.arcLength(c, True)
                 approx = cv2.approxPolyDP(c, 0.01 * peri, True)
 
                 # ensure that the approximated contour is "roughly" rectangular
-                if len(approx) >= 5 >= len(approx):
+                if len(approx) >= 5 and len(approx) <=6:
+                    # print len(approx)
                     # compute the bounding box of the approximated contour and
                     # use the bounding box to compute the aspect ratio
                     (x, y, w, h) = cv2.boundingRect(approx)
@@ -48,11 +51,12 @@ class ColourFinder():
 
                     # compute whether or not the width and height, solidity, and
                     # aspect ratio of the contour falls within appropriate bounds
-                    keepDims = w > 25 and h > 25
+                    keepDims = w > 30 and h > 30
                     keepSolidity = solidity > 0.8
-                    keepAspectRatio = aspectRatio >= 0.7 and aspectRatio <= 1.05
-
+                    keepAspectRatio = aspectRatio >= 0.8 and aspectRatio <= 1.10
+                    # if keepDims and keepSolidity: print "++" + str(solidity)
                     # ensure that the contour passes all our tests
+                    # print str(keepDims) + "," + str(keepSolidity) + "," + str(keepAspectRatio)
                     if keepDims and keepSolidity and keepAspectRatio:
                         # compute the center of the contour region
                         M = cv2.moments(approx)
@@ -66,6 +70,7 @@ class ColourFinder():
                                 tagExists = True
                                 currentTag.add_to_range(cX, cY, frame)
                         if not tagExists:
+                            print str(len(approx)) + "," + str(w) + "," + str(h) + "," + str(solidity) + "," + str(aspectRatio)
                             tracking_tags.append(tag)
 
                         cv2.drawContours(frame, [approx], -1, (0, 0, 255), 4)
@@ -82,6 +87,8 @@ class ColourFinder():
             cv2.imshow("Frame", frame)
             key = cv2.waitKey(1) & 0xFF
 
+            self.rawCapture.truncate(0)
+
             # if the 'q' key is pressed, stop the loop
             if key == ord("q"):
                 break
@@ -91,13 +98,13 @@ class ColourFinder():
             if current_time - self.start_time > 20:
                 break
 
-            print len(tracking_tags)
+            # print len(tracking_tags)
 
         cv2.destroyAllWindows()
         return tracking_tags
 
 
-    def save_tracking_tags_csv(tracking_tags, filename):
+    def save_tracking_tags_csv(self, tracking_tags, filename):
         writer = csv.writer(open('../data/', filename, mode='w'))
         id = 1
         for tag in tracking_tags:

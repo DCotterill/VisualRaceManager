@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class TrackingTag():
+class TrackingTag:
 
     def __init__(self, id, x, y, frame):
         self.id = id
