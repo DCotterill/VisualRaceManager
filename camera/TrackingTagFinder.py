@@ -5,21 +5,16 @@ import csv
 from TrackingTag import TrackingTag
 
 
-class ColourFinder():
-    def __init__(self, camera, rawCapture):
-        self.camera = camera
+class TrackingTagFinder():
+    def __init__(self, vs):
+        self.vs = vs
         self.start_time = time.time()
-        self.rawCapture = rawCapture
 
     def find_tracking_tags(self):
         tracking_tags = []
 
-        for image in self.camera.capture_continuous(self.rawCapture, format="bgr", use_video_port=True):
-            # grab the raw NumPy array representing the image, then initialize the timestamp
-            # and occupied/unoccupied text
-            frame = image.array
-        # while True:
-        #     (grabbed, frame) = self.camera.read()
+        while (True):
+            frame = self.vs.read()
 
             # convert the frame to grayscale, blur it, and detect edges
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -86,8 +81,6 @@ class ColourFinder():
             cv2.namedWindow("Frame", cv2.WINDOW_NORMAL)
             cv2.imshow("Frame", frame)
             key = cv2.waitKey(1) & 0xFF
-
-            self.rawCapture.truncate(0)
 
             # if the 'q' key is pressed, stop the loop
             if key == ord("q"):

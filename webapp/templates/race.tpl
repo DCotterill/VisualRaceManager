@@ -57,7 +57,6 @@
     <div class="container">
 
       <div class="starter-template" align="left">
-
       %if defined ('raceOrder'):
           <table class='table-bordered'>
 
@@ -80,8 +79,7 @@
 
              % for id, carData in raceData.items():
 
-               <th width="100px">{{id}}<div style="width:20px;height:20px;border:1px solid #000;background-color:rgb({{carData['red']}},{{carData['green']}},{{carData['blue']}});"></div>
-               </th>
+               <th width="100px"><div class="box" style="background-color:rgb({{carData['red']}},{{carData['green']}},{{carData['blue']}});">{{id}}</div></th>
              %end
 
              % for lapIndex in range (0, maxLaps):
