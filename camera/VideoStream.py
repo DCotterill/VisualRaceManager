@@ -3,7 +3,7 @@ from imutils.video import WebcamVideoStream
 class VideoStream:
     def __init__(self, src=0, usePiCamera=False, resolution=(320, 240), framerate=32):
         if usePiCamera:
-            from pivideostream import PiVideoStream
+            from imutils.video.pivideostream import PiVideoStream
 
             self.stream = PiVideoStream(resolution=resolution, framerate=framerate)
         else:
