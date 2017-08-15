@@ -1,6 +1,6 @@
 import unittest
 
-from camera.LapTimeManager import CarSpotter
+from camera.CarSpotter import CarSpotter
 
 
 class LapCounterTests(unittest.TestCase):

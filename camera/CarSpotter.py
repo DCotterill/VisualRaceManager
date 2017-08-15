@@ -24,7 +24,7 @@ class CarSpotter:
     def get_lap_times(self):
         lap_times = ""
         for id, times in self.laps.items():
-            writer = csv.writer(open('../../data/' 'laps-' + str(id) + '.csv', mode='w'))
+            writer = csv.writer(open('../data/' 'laps-' + str(id) + '.csv', mode='w'))
 
             lap_times = lap_times + str(id)
             if len(times) > 1:
