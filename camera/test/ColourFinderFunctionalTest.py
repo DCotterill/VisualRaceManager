@@ -1,6 +1,4 @@
 import argparse
-
-import cv2
 import time
 
 from camera.TrackingTagFinder import TrackingTagFinder
@@ -15,5 +13,7 @@ time.sleep(2.0)
 
 finder = TrackingTagFinder(vs)
 tracking_tags = finder.find_tracking_tags()
+
+finder.save_tracking_tags_csv(tracking_tags, "tracking-tags.csv")
 
 vs.stop()

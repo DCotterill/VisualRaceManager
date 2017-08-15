@@ -15,6 +15,8 @@ class TrackingTagFinder():
 
         while (True):
             frame = self.vs.read()
+            if frame is None:
+                break
 
             # convert the frame to grayscale, blur it, and detect edges
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)

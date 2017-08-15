@@ -4,9 +4,6 @@ from ThreadedVideoCapture import  ThreadedVideoCapture
 from picamera.array import PiRGBArray
 from picamera import PiCamera
 import time
-# import csv
-#
-# writer = csv.writer(open('../data/' + str("blah.csv"), 'w'))
 
 # initialize the camera and grab a reference to the raw camera capture
 camera = PiCamera()

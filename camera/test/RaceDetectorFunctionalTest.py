@@ -1,5 +1,8 @@
 import csv
 import cv2
+import argparse
+from camera.VideoStream import VideoStream
+
 from camera.RaceDetector import RaceDetector
 from camera.TrackingTag import TrackingTag
 import numpy as np
@@ -10,7 +13,7 @@ def load_tracking_tags_csv():
     tracking_tags = []
 
     try:
-        with open('../test-data/' 'tracking-tags-2-4-cars.csv', mode='r') as tracking_tags_file:
+        with open('../../test-data/' 'tracking-tags-2-4-cars.csv', mode='r') as tracking_tags_file:
             reader = csv.reader(tracking_tags_file)
             for row in reader:
                 tag = TrackingTag(int(row[0]), 0, 0, None)
@@ -22,25 +25,31 @@ def load_tracking_tags_csv():
     return tracking_tags
 
 tracking_tags = load_tracking_tags_csv()
-camera = cv2.VideoCapture("../test-data/car-laps-blue-then-green.mov")
 
-detector = RaceDetector(camera, tracking_tags, testing=True)
+ap = argparse.ArgumentParser()
+ap.add_argument("-p", "--picamera", type=int, default=-1, help="whether or not the Raspberry Pi camera should be used")
+args = vars(ap.parse_args())
+
+vs = VideoStream(usePiCamera=args["picamera"] > 0, src="../../test-data/calibration-2-4-cars.mov").start()
+time.sleep(2.0)
+
+detector = RaceDetector(vs, tracking_tags)
 detector.watch_tracking_tags()
 
-detector.setCamera(cv2.VideoCapture("../test-data/orange-car-slow.mov"))
+detector.setCamera(VideoStream(usePiCamera=args["picamera"] > 0, src="../../test-data/orange-car-slow.mov").start())
 detector.watch_tracking_tags()
 
 time.sleep(4)
 
-detector.setCamera(cv2.VideoCapture("../test-data/car-laps-blue-then-green.mov"))
+detector.setCamera(VideoStream(usePiCamera=args["picamera"] > 0, src="../../test-data/car-laps-blue-then-green.mov").start())
 detector.watch_tracking_tags()
 
-detector.setCamera(cv2.VideoCapture("../test-data/orange-car-slow.mov"))
+detector.setCamera(VideoStream(usePiCamera=args["picamera"] > 0, src="../../test-data/orange-car-slow.mov").start())
 detector.watch_tracking_tags()
 
 time.sleep(6)
 
-detector.setCamera(cv2.VideoCapture("../test-data/orange-car-slow.mov"))
+detector.setCamera(VideoStream(usePiCamera=args["picamera"] > 0, src="../../test-data/orange-car-slow.mov").start())
 detector.watch_tracking_tags()
 
 
