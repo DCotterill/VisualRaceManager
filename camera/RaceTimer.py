@@ -1,21 +1,26 @@
-from TrackingTagFinder import ColourFinder
-from RaceDetector import RaceDetector
-from ThreadedVideoCapture import  ThreadedVideoCapture
-from picamera.array import PiRGBArray
-from picamera import PiCamera
 import time
+import argparse
 
-# initialize the camera and grab a reference to the raw camera capture
-camera = PiCamera()
-camera.resolution = (640, 480)
-camera.framerate = 32
-rawCapture = PiRGBArray(camera, size=(640, 480))
+from camera.VideoStream import VideoStream
+from camera.TrackingTagFinder import TrackingTagFinder
+from camera.RaceDetector import RaceDetector
 
-# allow the camera to warmup
-time.sleep(0.1)
-# camera = ThreadedVideoCapture(src=1).start()
+ap = argparse.ArgumentParser()
+ap.add_argument("-p", "--picamera", type=int, default=-1, help="whether or not the Raspberry Pi camera should be used")
+args = vars(ap.parse_args())
 
-finder = ColourFinder(camera, rawCapture)
+usePiCamera = args["picamera"] > 0
+
+# Macbook has wierd camera app installed, so need to set src=1
+if usePiCamera:
+    src = 0
+else:
+    src = 1
+
+vs = VideoStream(usePiCamera=usePiCamera, src=src).start()
+time.sleep(2.0)
+
+finder = TrackingTagFinder(vs)
 
 tracking_tags = finder.find_tracking_tags()
 
@@ -28,6 +33,6 @@ for tag in tracking_tags:
 
 finder.save_tracking_tags_csv(tracking_tags, 'tracking-tags.csv')
 
-detector = RaceDetector(camera, tracking_tags, rawCapture)
+detector = RaceDetector(vs, tracking_tags)
 detector.watch_tracking_tags()
 

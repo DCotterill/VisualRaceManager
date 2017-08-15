@@ -90,8 +90,8 @@ class TrackingTagFinder():
             if key == ord("r"):
                 tracking_tags = []
             current_time = time.time()
-            if current_time - self.start_time > 20:
-                break
+            # if current_time - self.start_time > 20:
+            #     break
 
             # print len(tracking_tags)
 
