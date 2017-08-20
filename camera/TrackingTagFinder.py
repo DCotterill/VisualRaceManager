@@ -34,7 +34,7 @@ class TrackingTagFinder():
                 approx = cv2.approxPolyDP(c, 0.01 * peri, True)
 
                 # ensure that the approximated contour is "roughly" rectangular
-                if len(approx) >= 5 and len(approx) <=6:
+                if len(approx) >= 4 and len(approx) <=6:
                     # print len(approx)
                     # compute the bounding box of the approximated contour and
                     # use the bounding box to compute the aspect ratio
@@ -50,7 +50,7 @@ class TrackingTagFinder():
                     # aspect ratio of the contour falls within appropriate bounds
                     keepDims = w > 30 and h > 30
                     keepSolidity = solidity > 0.8
-                    keepAspectRatio = aspectRatio >= 0.8 and aspectRatio <= 1.10
+                    keepAspectRatio = aspectRatio >= 0.75 and aspectRatio <= 1.15
                     # if keepDims and keepSolidity: print "++" + str(solidity)
                     # ensure that the contour passes all our tests
                     # print str(keepDims) + "," + str(keepSolidity) + "," + str(keepAspectRatio)
