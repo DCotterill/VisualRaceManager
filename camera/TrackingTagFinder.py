@@ -85,7 +85,7 @@ class TrackingTagFinder():
             key = cv2.waitKey(1) & 0xFF
 
             # if the ' ' key is pressed, stop the loop
-            if key == ord(" "):
+            if key == ord("q"):
                 break
             if key == ord("r"):
                 tracking_tags = []

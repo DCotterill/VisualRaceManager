@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c38a6e8-e7bb-4032-97df-711f37f28007" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/camera/BackgroundLevelDetector.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/CarSpotter.py" afterPath="$PROJECT_DIR$/camera/CarSpotter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/RaceDetector.py" afterPath="$PROJECT_DIR$/camera/RaceDetector.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/RaceTimer.py" afterPath="$PROJECT_DIR$/camera/RaceTimer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/TrackingTag.py" afterPath="$PROJECT_DIR$/camera/TrackingTag.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/TrackingTagFinder.py" afterPath="$PROJECT_DIR$/camera/TrackingTagFinder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/laps-1.csv" afterPath="$PROJECT_DIR$/data/laps-1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/laps-2.csv" afterPath="$PROJECT_DIR$/data/laps-2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/laps-3.csv" afterPath="$PROJECT_DIR$/data/laps-3.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +18,8 @@
       <file leaf-file-name="TrackingTagFinder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera/TrackingTagFinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="82" column="51" lean-forward="false" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+            <state relative-caret-position="253">
+              <caret line="87" column="28" lean-forward="false" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -35,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RaceTimer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RaceTimer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+            <state relative-caret-position="238">
+              <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -47,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RaceDetector.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RaceDetector.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera/RaceDetector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="-219">
               <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
               <folding />
             </state>
@@ -60,7 +52,7 @@
       <file leaf-file-name="BackgroundLevelDetector.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera/BackgroundLevelDetector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="252">
               <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -214,21 +206,20 @@
         <option value="$PROJECT_DIR$/test/RaceDetectorFunctionalTest.py" />
         <option value="$PROJECT_DIR$/test/ColourFinderFunctionalTest.py" />
         <option value="$PROJECT_DIR$/camera/VideoStream.py" />
-        <option value="$PROJECT_DIR$/camera/TrackingTagFinder.py" />
         <option value="$PROJECT_DIR$/camera/CarSpotter.py" />
         <option value="$PROJECT_DIR$/camera/BackgroundLevelDetector.py" />
-        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
-        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
         <option value="$PROJECT_DIR$/camera/TrackingTag.py" />
         <option value="$PROJECT_DIR$/camera/RaceDetector.py" />
+        <option value="$PROJECT_DIR$/camera/TrackingTagFinder.py" />
+        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
+        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="-1057" />
-    <option name="width" value="1824" />
-    <option name="height" value="1040" />
+    <option name="y" value="23" />
+    <option name="width" value="1366" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -637,13 +628,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="-1057" width="1824" height="1040" extended-state="0" />
+    <frame x="0" y="23" width="1366" height="690" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25054824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33455345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.492276" sideWeight="0.38706142" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.492276" sideWeight="0.6129386" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753623" sideWeight="0.38799414" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753623" sideWeight="0.61200583" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -773,7 +764,7 @@
         <state relative-caret-position="30">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -886,7 +877,7 @@
         <state relative-caret-position="105">
           <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -935,36 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/camera/TrackingTagFinder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="51" lean-forward="false" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/camera/BackgroundLevelDetector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/RaceDetectorFunctionalTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -975,11 +936,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/camera/BackgroundLevelDetector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/camera/RaceDetector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="-219">
           <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera/TrackingTagFinder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="87" column="28" lean-forward="false" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
