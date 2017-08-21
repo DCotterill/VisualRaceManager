@@ -2,7 +2,7 @@ import cv2
 import time
 
 
-class RaceDetector:
+class BackgroundLevelDetector:
     def __init__(self, vs, tracking_tags):
         self.vs = vs
         self.tracking_tags = tracking_tags
@@ -10,7 +10,7 @@ class RaceDetector:
     def setCamera(self, vs):
         self.vs = vs
 
-    def watch_tracking_tags(self):
+    def watch_background(self):
 
         while True:
             frame = self.vs.read()
