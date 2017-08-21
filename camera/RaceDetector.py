@@ -30,7 +30,7 @@ class RaceDetector:
                 lower, upper = tag.get_colour_range()
                 tag_mask = cv2.inRange(frame, lower, upper)
 
-                if cv2.countNonZero(tag_mask) > COLOUR_COUNT_THRESHOLD:
+                if cv2.countNonZero(tag_mask) > tag.get_max_background_count() + COLOUR_COUNT_THRESHOLD:
                     millis = int(round(time.time() * 1000))
                     self.car_spotter.register_car(tag.id, millis)
 

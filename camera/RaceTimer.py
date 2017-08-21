@@ -20,8 +20,10 @@ else:
 vs = VideoStream(usePiCamera=usePiCamera, src=src).start()
 time.sleep(2.0)
 
+print "Place cars in detection position then press <space>. Press 'r' to reset detection."
 finder = TrackingTagFinder(vs)
 
+print "Move cars to detect background levels, then press <space>"
 tracking_tags = finder.find_tracking_tags()
 
 for tag in tracking_tags:
@@ -32,6 +34,11 @@ for tag in tracking_tags:
     print "-----"
 
 finder.save_tracking_tags_csv(tracking_tags, 'tracking-tags.csv')
+
+print "Cars Detected: " + str(len(tracking_tags))
+
+for tag in tracking_tags:
+    print tag.get_middle_colour + ":" + str(tag.get_max_backgound_count())
 
 detector = RaceDetector(vs, tracking_tags)
 detector.watch_tracking_tags()

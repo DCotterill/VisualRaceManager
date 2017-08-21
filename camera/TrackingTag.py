@@ -11,6 +11,8 @@ class TrackingTag:
         self.x = x
         self.y = y
         self.colour_samples = 0
+        self.max_background_count = 0
+
         if frame != None:
             self.add_to_range(x, y, frame)
 
@@ -23,6 +25,12 @@ class TrackingTag:
     def set_colour_average(self, colour_average):
         self.colour_average = colour_average
 
+    def update_max_background_count(self, background_count):
+        if background_count > self.max_background_count:
+            self.max_background_count = background_count
+    def get_max_background_count(self):
+        return self.max_background_count
+    
     def add_to_range(self, x, y, frame):
         for y_offset in range(-6, 6):
             for x_offset in range(-6, 6):

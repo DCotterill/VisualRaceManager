@@ -84,8 +84,8 @@ class TrackingTagFinder():
             cv2.imshow("Frame", frame)
             key = cv2.waitKey(1) & 0xFF
 
-            # if the 'q' key is pressed, stop the loop
-            if key == ord("q"):
+            # if the ' ' key is pressed, stop the loop
+            if key == ord(" "):
                 break
             if key == ord("r"):
                 tracking_tags = []

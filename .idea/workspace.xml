@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c38a6e8-e7bb-4032-97df-711f37f28007" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/VideoStream.py" afterPath="$PROJECT_DIR$/camera/VideoStream.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/camera/BackgroundLevelDetector.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/CarSpotter.py" afterPath="$PROJECT_DIR$/camera/CarSpotter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/RaceDetector.py" afterPath="$PROJECT_DIR$/camera/RaceDetector.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/RaceTimer.py" afterPath="$PROJECT_DIR$/camera/RaceTimer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/TrackingTag.py" afterPath="$PROJECT_DIR$/camera/TrackingTag.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/TrackingTagFinder.py" afterPath="$PROJECT_DIR$/camera/TrackingTagFinder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/laps-1.csv" afterPath="$PROJECT_DIR$/data/laps-1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/laps-2.csv" afterPath="$PROJECT_DIR$/data/laps-2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/laps-3.csv" afterPath="$PROJECT_DIR$/data/laps-3.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +26,8 @@
       <file leaf-file-name="TrackingTagFinder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera/TrackingTagFinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+            <state relative-caret-position="1230">
+              <caret line="82" column="51" lean-forward="false" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -29,8 +38,8 @@
       <file leaf-file-name="RaceTimer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="630">
+              <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -38,11 +47,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoStream.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RaceDetector.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/camera/RaceDetector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackgroundLevelDetector.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/camera/BackgroundLevelDetector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackingTag.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/camera/TrackingTag.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoStream.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera/VideoStream.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+            <state relative-caret-position="30">
+              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -51,7 +92,7 @@
       <file leaf-file-name="PiVideoStream.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pivideostream/PiVideoStream.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="150">
               <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
               <folding>
                 <element signature="e#32#69#0" expanded="true" />
@@ -63,8 +104,8 @@
       <file leaf-file-name="RaceDetectorFunctionalTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/RaceDetectorFunctionalTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -75,7 +116,7 @@
       <file leaf-file-name="LapCounterTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/LapCounterTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="330">
               <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -87,41 +128,9 @@
       <file leaf-file-name="CarSpotter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera/CarSpotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="26" column="82" lean-forward="false" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+            <state relative-caret-position="150">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tracking-tags.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/tracking-tags.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RaceManagerTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/RaceManagerTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="73" column="21" lean-forward="false" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ColourFinderFunctionalTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ColourFinderFunctionalTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -161,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/drone.py" />
         <option value="$PROJECT_DIR$/colour_finder.py" />
         <option value="$PROJECT_DIR$/TrackingTag.py" />
         <option value="$PROJECT_DIR$/LapCounterTest.py" />
@@ -188,7 +196,6 @@
         <option value="$PROJECT_DIR$/webapp/RaceManager.py" />
         <option value="$PROJECT_DIR$/camera/test/LapCounterTest.py" />
         <option value="$PROJECT_DIR$/camera/LapTimeManager.py" />
-        <option value="$PROJECT_DIR$/camera/TrackingTag.py" />
         <option value="$PROJECT_DIR$/camera/ThreadedVideoCapture.py" />
         <option value="$PROJECT_DIR$/camera/ColourFinder.py" />
         <option value="$PROJECT_DIR$/camera/ColourFinderA.py" />
@@ -200,26 +207,28 @@
         <option value="$PROJECT_DIR$/camera/test/fps_demo.py" />
         <option value="$PROJECT_DIR$/camera/test/videostream_demo.py" />
         <option value="$PROJECT_DIR$/camera/test/ColourFinderFunctionalTest.py" />
-        <option value="$PROJECT_DIR$/camera/RaceDetector.py" />
         <option value="$PROJECT_DIR$/camera/test/RaceDetectorFunctionalTest.py" />
         <option value="$PROJECT_DIR$/test/LapCounterTest.py" />
-        <option value="$PROJECT_DIR$/camera/CarSpotter.py" />
-        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
-        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
         <option value="$PROJECT_DIR$/data/tracking-tags.csv" />
         <option value="$PROJECT_DIR$/pivideostream/PiVideoStream.py" />
         <option value="$PROJECT_DIR$/test/RaceDetectorFunctionalTest.py" />
         <option value="$PROJECT_DIR$/test/ColourFinderFunctionalTest.py" />
-        <option value="$PROJECT_DIR$/camera/TrackingTagFinder.py" />
         <option value="$PROJECT_DIR$/camera/VideoStream.py" />
+        <option value="$PROJECT_DIR$/camera/TrackingTagFinder.py" />
+        <option value="$PROJECT_DIR$/camera/CarSpotter.py" />
+        <option value="$PROJECT_DIR$/camera/BackgroundLevelDetector.py" />
+        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
+        <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
+        <option value="$PROJECT_DIR$/camera/TrackingTag.py" />
+        <option value="$PROJECT_DIR$/camera/RaceDetector.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="8" />
     <option name="y" value="-1057" />
-    <option name="width" value="1486" />
-    <option name="height" value="1006" />
+    <option name="width" value="1824" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -236,6 +245,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -407,26 +417,25 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/test-data" />
-      <recent name="$PROJECT_DIR$/camera" />
-      <recent name="$PROJECT_DIR$/webapp/templates" />
-      <recent name="$PROJECT_DIR$/videos" />
-      <recent name="$PROJECT_DIR$/webapp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/camera/test" />
       <recent name="$PROJECT_DIR$/webapp" />
       <recent name="$PROJECT_DIR$/test-data" />
       <recent name="$PROJECT_DIR$/camera" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/camera" />
+      <recent name="$PROJECT_DIR$/test-data" />
+      <recent name="$PROJECT_DIR$/webapp/templates" />
+      <recent name="$PROJECT_DIR$/videos" />
+      <recent name="$PROJECT_DIR$/webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -441,7 +450,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ColourFinderFunctionalTest">
+  <component name="RunManager" selected="Python.RaceDetectorFunctionalTest (1)">
     <configuration default="false" name="RaceDetectorFunctionalTest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -606,8 +615,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ColourFinderFunctionalTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.RaceDetectorFunctionalTest (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.RaceDetectorFunctionalTest (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ColourFinderFunctionalTest" />
         <item index="2" class="java.lang.String" itemvalue="Python.RaceTimer" />
         <item index="3" class="java.lang.String" itemvalue="Python.RaceDetector" />
         <item index="4" class="java.lang.String" itemvalue="Python.RaceManagerTest" />
@@ -628,13 +637,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="-1057" width="1486" height="1006" extended-state="0" />
+    <frame x="8" y="-1057" width="1824" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30753702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25054824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5261473" sideWeight="0.38425303" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5261473" sideWeight="0.615747" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.492276" sideWeight="0.38706142" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.492276" sideWeight="0.6129386" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -665,13 +674,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.1/python_stubs/-923448878/_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="131" column="4" lean-forward="false" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-data/laps-3.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -785,13 +787,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/camera/LapTimeManager.py" />
-    <entry file="file://$PROJECT_DIR$/camera/TrackingTag.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/camera/ThreadedVideoCapture.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -803,13 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/camera/RaceDetector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -885,17 +873,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/camera/CarSpotter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" column="82" lean-forward="false" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/RaceManagerTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="1080">
           <caret line="73" column="21" lean-forward="false" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
           <folding />
         </state>
@@ -903,7 +883,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ColourFinderFunctionalTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="105">
           <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -911,19 +891,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RaceDetectorFunctionalTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/LapCounterTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="330">
           <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -931,29 +901,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/camera/TrackingTagFinder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pivideostream/PiVideoStream.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="150">
           <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding>
             <element signature="e#32#69#0" expanded="true" />
@@ -963,8 +913,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/camera/VideoStream.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        <state relative-caret-position="30">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera/CarSpotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera/TrackingTag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera/TrackingTagFinder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="51" lean-forward="false" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera/BackgroundLevelDetector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RaceDetectorFunctionalTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera/RaceDetector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding />
         </state>
       </provider>
