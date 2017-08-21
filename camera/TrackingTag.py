@@ -25,6 +25,9 @@ class TrackingTag:
     def set_colour_average(self, colour_average):
         self.colour_average = colour_average
 
+    def reset_background_count(self):
+        self.max_background_count = 0
+        
     def update_max_background_count(self, background_count):
         if background_count > self.max_background_count:
             self.max_background_count = background_count

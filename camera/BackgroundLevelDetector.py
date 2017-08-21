@@ -30,3 +30,8 @@ class BackgroundLevelDetector:
 
             if key == ord("q"):
                break
+
+            if key == ord("r"):
+                for tag in self.tracking_tags:
+                    tag.reset_background_count()
+
