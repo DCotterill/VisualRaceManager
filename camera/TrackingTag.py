@@ -28,9 +28,10 @@ class TrackingTag:
     def update_max_background_count(self, background_count):
         if background_count > self.max_background_count:
             self.max_background_count = background_count
+
     def get_max_background_count(self):
         return self.max_background_count
-    
+
     def add_to_range(self, x, y, frame):
         for y_offset in range(-6, 6):
             for x_offset in range(-6, 6):

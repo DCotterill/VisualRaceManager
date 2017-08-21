@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6c38a6e8-e7bb-4032-97df-711f37f28007" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/RaceTimer.py" afterPath="$PROJECT_DIR$/camera/RaceTimer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/TrackingTagFinder.py" afterPath="$PROJECT_DIR$/camera/TrackingTagFinder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/camera/TrackingTag.py" afterPath="$PROJECT_DIR$/camera/TrackingTag.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +18,7 @@
       <file leaf-file-name="TrackingTagFinder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera/TrackingTagFinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="1305">
               <caret line="87" column="28" lean-forward="false" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+              <caret line="40" column="79" lean-forward="false" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -64,8 +64,8 @@
       <file leaf-file-name="TrackingTag.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/camera/TrackingTag.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="341">
+              <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -208,10 +208,10 @@
         <option value="$PROJECT_DIR$/camera/VideoStream.py" />
         <option value="$PROJECT_DIR$/camera/CarSpotter.py" />
         <option value="$PROJECT_DIR$/camera/BackgroundLevelDetector.py" />
-        <option value="$PROJECT_DIR$/camera/TrackingTag.py" />
         <option value="$PROJECT_DIR$/camera/RaceDetector.py" />
         <option value="$PROJECT_DIR$/camera/TrackingTagFinder.py" />
         <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
+        <option value="$PROJECT_DIR$/camera/TrackingTag.py" />
         <option value="$PROJECT_DIR$/camera/RaceTimer.py" />
       </list>
     </option>
@@ -910,22 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/camera/CarSpotter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/camera/TrackingTag.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/RaceDetectorFunctionalTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -954,9 +938,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/camera/CarSpotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/camera/TrackingTagFinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="1305">
           <caret line="87" column="28" lean-forward="false" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -964,10 +956,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/camera/TrackingTag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/camera/RaceTimer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <caret line="40" column="79" lean-forward="false" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
