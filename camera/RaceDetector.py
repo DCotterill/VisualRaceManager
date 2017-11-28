@@ -43,7 +43,7 @@ class RaceDetector:
             #output = cv2.bitwise_and(frame, frame, mask=mask)
             #frame = output
 
-            # cv2.imshow("Frame", frame)
+            cv2.imshow("Frame", frame)
             key = cv2.waitKey(1) & 0xFF
 
             if key == ord("q"):
