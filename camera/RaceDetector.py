@@ -4,7 +4,7 @@ from imutils.video import VideoStream
 
 from CarSpotter import CarSpotter
 
-COLOUR_COUNT_THRESHOLD = 5
+COLOUR_COUNT_THRESHOLD = 100
 MIN_LAP_TIME_MS = 5000
 
 
@@ -32,6 +32,7 @@ class RaceDetector:
                 tag_mask = cv2.inRange(frame, lower, upper)
 
                 if cv2.countNonZero(tag_mask) > tag.get_max_background_count() + COLOUR_COUNT_THRESHOLD:
+                    print "count:" + str(cv2.countNonZero(tag_mask))
                     millis = int(round(time.time() * 1000))
                     self.car_spotter.register_car(tag.id, millis)
 

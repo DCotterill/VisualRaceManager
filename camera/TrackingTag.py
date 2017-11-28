@@ -66,7 +66,7 @@ class TrackingTag:
 
     def get_colour_range(self):
 
-        COLOUR_WIDTH = 30
+        COLOUR_WIDTH = 10
         if self.colour_average[0] > COLOUR_WIDTH:
             self.colour_range_low[0] = self.colour_average[0] - COLOUR_WIDTH
         else: self.colour_range_low[0] = 0
@@ -98,7 +98,7 @@ class TrackingTag:
         return self.colour_range_low, self.colour_range_high
 
     def is_same_tag(self, otherTag):
-        return abs(self.x - otherTag.x) < 50 and abs(self.y - otherTag.y) < 50
+        return abs(self.x - otherTag.x) < 15 and abs(self.y - otherTag.y) < 15
 
     def get_middle_colour(self):
         return self.colour_average

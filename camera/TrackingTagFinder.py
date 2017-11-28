@@ -21,7 +21,7 @@ class TrackingTagFinder():
             # convert the frame to grayscale, blur it, and detect edges
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             blurred = cv2.GaussianBlur(gray, (7, 7), 0)
-            edged = cv2.Canny(blurred, 60, 90)
+            edged = cv2.Canny(blurred, 40, 80)
 
             # find contours in the edge map
             (_, cnts, _) = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL,
@@ -34,7 +34,7 @@ class TrackingTagFinder():
                 approx = cv2.approxPolyDP(c, 0.01 * peri, True)
 
                 # ensure that the approximated contour is "roughly" rectangular
-                if len(approx) >= 4 and len(approx) <=6:
+                if len(approx) >= 4 and len(approx) <=20:
                     # print len(approx)
                     # compute the bounding box of the approximated contour and
                     # use the bounding box to compute the aspect ratio
@@ -48,12 +48,12 @@ class TrackingTagFinder():
 
                     # compute whether or not the width and height, solidity, and
                     # aspect ratio of the contour falls within appropriate bounds
-                    keepDims = w > 30 and h > 30
-                    keepSolidity = solidity > 0.8
-                    keepAspectRatio = aspectRatio >= 0.75 and aspectRatio <= 1.15
+                    keepDims = w > 20 and w < 40 and h > 20 and h < 40
+                    keepSolidity = solidity > 0.6
+                    keepAspectRatio = aspectRatio >= 0.80 and aspectRatio <= 1.35
                     # if keepDims and keepSolidity: print "++" + str(solidity)
                     # ensure that the contour passes all our tests
-                    # print str(keepDims) + "," + str(keepSolidity) + "," + str(keepAspectRatio)
+
                     if keepDims and keepSolidity and keepAspectRatio:
                         # compute the center of the contour region
                         M = cv2.moments(approx)

@@ -7,11 +7,10 @@ from imutils.video import VideoStream
 ap = argparse.ArgumentParser()
 ap.add_argument("-p", "--picamera", type=int, default=-1, help="whether or not the Raspberry Pi camera should be used")
 args = vars(ap.parse_args())
-vs = VideoStream(usePiCamera=args["picamera"] > 0, src="../test/output.avi").start()
+vs = VideoStream(usePiCamera=args["picamera"] > 0, src="../test-data/3-cars.avi").start()
 
 while True:
     frame = vs.read()
-    print frame
     if frame is None:
         break
 
