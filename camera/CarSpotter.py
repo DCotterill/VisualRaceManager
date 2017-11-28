@@ -1,5 +1,6 @@
 import csv
 
+
 class CarSpotter:
 
     def __init__(self, tracking_tags, lap_threshold):

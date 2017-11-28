@@ -1,7 +1,7 @@
 import time
 import argparse
 
-from camera.VideoStream import VideoStream
+from imutils.video import VideoStream
 from camera.TrackingTagFinder import TrackingTagFinder
 from camera.RaceDetector import RaceDetector
 from camera.BackgroundLevelDetector import BackgroundLevelDetector

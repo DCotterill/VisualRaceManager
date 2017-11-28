@@ -1,5 +1,6 @@
 import cv2
 import time
+from imutils.video import VideoStream
 
 from CarSpotter import CarSpotter
 

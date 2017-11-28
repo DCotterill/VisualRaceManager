@@ -3,7 +3,7 @@ import argparse
 import numpy as np
 import time
 
-from camera.VideoStream import VideoStream
+from imutils.video import VideoStream
 from camera.RaceDetector import RaceDetector
 from camera.TrackingTag import TrackingTag
 
